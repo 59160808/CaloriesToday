@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>Register</ion-title>
+    
+    <ion-button href="./home" color="warning">
+      <ion-icon  name="arrow-back"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="warning">
+  <ion-list>
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input [(ngModel)]="user.name" type="text" value></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Lastname</ion-label>
+      <ion-input [(ngModel)]="user.lastname" type="text" value></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Gender</ion-label>
+      <ion-select placeholder="Select One">
+        <ion-select-option value="f">Female</ion-select-option>
+        <ion-select-option value="m">Male</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>E-mail</ion-label>
+      <ion-input type="text" value></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Username</ion-label>
+      <ion-input [(ngModel)]="user.username" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input [(ngModel)]="user.password" type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Confrim Password</ion-label>
+      <ion-input type="password" value></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-button color="success" expand="block" (click)="register()">SAVE</ion-button>

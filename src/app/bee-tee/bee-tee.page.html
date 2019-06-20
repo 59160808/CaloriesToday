@@ -1,0 +1,66 @@
+<ion-header>
+    <ion-toolbar color="warning">
+      <ion-title>BEE-TEE</ion-title>
+      <ion-button   href="./menu" color="warning">
+      <ion-icon  name="arrow-back"></ion-icon>
+        </ion-button>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-list>
+ 
+      <ion-item>
+          <ion-label>Weight</ion-label>
+          <ion-input text-right type="number" [(ngModel)]="dataPerson.Weight"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Height</ion-label>
+            <ion-input text-right type="number" [(ngModel)]="dataPerson.Height"></ion-input>
+          </ion-item>
+      <ion-item>
+          <ion-label>Stress factor</ion-label>
+          <ion-select placeholder="Select One" (ionChange)="selectStress($event)">
+            <ion-select-option value="1.20">Minor injury</ion-select-option>
+            <ion-select-option value="1.200">Minor surgery</ion-select-option>
+            <ion-select-option value="1.30">Major surgery</ion-select-option>
+            <ion-select-option value="1.2000">Clean wound</ion-select-option>
+            <ion-select-option value="1.50">Infected wound</ion-select-option>
+            <ion-select-option value="1.40">Pneumonia with ARDS</ion-select-option>
+            <ion-select-option value="1.500">Multiple trauma</ion-select-option>
+            <ion-select-option value="1.60">Trauma with closed head injury</ion-select-option>
+            <ion-select-option value="1.1">Resting</ion-select-option>
+            <ion-select-option value="1.20000">Confined to bed</ion-select-option>
+            <ion-select-option value="1.300">Out of bed</ion-select-option>
+            <ion-select-option value="1.200000">bone fracture</ion-select-option>
+            <ion-select-option value="1.400">Cancer cachexia</ion-select-option>
+            <ion-select-option value="1.6000">Major sepsis </ion-select-option>
+            <ion-select-option value="2.1">Severe Thermal injury </ion-select-option>
+            <ion-select-option value="1.0">Febrile </ion-select-option>
+            <ion-select-option value="1.5">แผลไหม้น้อยกว่า40% TBSA</ion-select-option>
+            <ion-select-option value="1.6">แผลไหม้มากกว่า40% TBSA</ion-select-option>
+            <ion-select-option value="2.1">แผลไฟไหม้รุนแรง</ion-select-option>
+            <ion-select-option value="1.425">เจ็บป่วยเรื้อรัง</ion-select-option>
+            <ion-select-option value="1.35">กล้ามเนื้อบาดเจ็บ</ion-select-option>
+            <ion-select-option value="0.925">อดอาหาร</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label>Activity</ion-label>
+            <ion-select placeholder="Select One" (ionChange)="selectActivity($event)">
+              <ion-select-option value="1.0">หมดสติและใช้เครื่องช่วยหายใจ</ion-select-option>
+              <ion-select-option value="1.1">Resting</ion-select-option>
+              <ion-select-option value="1.2">Confined to bed</ion-select-option>
+              <ion-select-option value="1.3">Out of bed</ion-select-option>
+            </ion-select>
+          </ion-item>
+    </ion-list>
+
+   
+   
+  </ion-content>
+  <ion-footer>
+      <ion-button expand="block" (click)="ok()" >Go to calories calculator</ion-button>
+  
+    </ion-footer>
+    

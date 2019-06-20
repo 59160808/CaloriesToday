@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>caloriesDay</ion-title>
+    <ion-button  href="./menu" color="warning">
+        <ion-icon  name="arrow-back"></ion-icon>
+      </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list >
+    <div style="margin-top: 10px">
+  <ion-item lines="none">
+    <ion-label><h1>CALORIES TOTAL TO DAY</h1></ion-label>
+  </ion-item>
+</div>
+  <div style="margin-bottom: 10px">
+  <ion-item  lines="none" >
+    <ion-label>{{ ntotleValue }} kcal</ion-label>
+  </ion-item>
+</div>
+
+<div style="margin-top:30px">
+    <ion-item lines="none">
+      <ion-label><h1>CALORIES TO DAY (TEE) </h1></ion-label>
+    </ion-item>
+  </div>
+    <div style="margin-bottom: 10px">
+    <ion-item  lines="none" >
+      <ion-label>{{ beetotal }} kcal</ion-label>
+    </ion-item>
+  </div>
+</ion-list>
+</ion-content>
+<ion-footer style="padding-left: 25px">
+  <ion-button style="width: 45%" href="./graph/{{ intakeID }}">Go to PieGraph</ion-button>
+  <ion-button style="width: 45%" href="./graph2">Go to lineGraph  </ion-button>
+</ion-footer>

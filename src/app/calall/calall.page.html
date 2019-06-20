@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>Totle</ion-title>
+    <ion-button   href="./menu" color="warning">
+        <ion-icon    name="arrow-back"></ion-icon>
+      </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list >
+    <ion-item >
+        <div  >
+            <div style="margin-top: 20px">
+          <ion-label ><h1> BEE </h1></ion-label>
+          </div>
+          </div>
+    </ion-item>
+    <ion-item >
+      <div >
+          <ion-label><h1>{{ getGender() }} + ( 13.75 X {{ dataPerson.Weight }} ) + ( 5.003 X {{ dataPerson.Height }} ) - 6.775 X {{ dataPerson.Age }}</h1></ion-label>    
+        </div>
+        </ion-item>
+        <ion-item >
+            <div >
+                <ion-label><h1>ผลลัพธ์</h1></ion-label>    
+              </div>
+              </ion-item>
+                <div  style="text-align:center">
+                    <ion-label><h1>{{ bee }} </h1></ion-label>
+                  </div>
+
+                   <ion-item >
+                      <div style="padding-left: 20px" >
+                          <div style="margin-top: 40px">
+                        <ion-label ><h1> TEE</h1></ion-label>
+                        </div>
+                        </div>
+                  </ion-item>
+                  <ion-item >
+                    <div >
+                        <ion-label><h1>{{ bee }} x {{ dataPerson.Activity }} x {{ dataPerson.Stress }}</h1></ion-label>    
+                      </div>
+                      </ion-item>
+                      <ion-item >
+                          <div >
+                              <ion-label><h1>ผลลัพธ์</h1></ion-label>    
+                            </div>
+                            </ion-item>
+                            <div style="text-align:center" >
+                                <ion-label><h1>{{ bee * dataPerson.Activity * dataPerson.Stress }}</h1></ion-label>    
+                              </div>
+
+  </ion-list>
+ 
+</ion-content>

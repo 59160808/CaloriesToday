@@ -1,0 +1,56 @@
+<ion-header>
+    <ion-toolbar color="warning">
+      <ion-title>BEE/TEE</ion-title>
+      <ion-button href="./me-nupublic" color="warning">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-list >
+      <ion-item >
+          <div style="padding-left: 20px" >
+              <div style="margin-top: 20px">
+            <ion-label ><h1> BEE </h1></ion-label>
+            </div>
+            </div>
+      </ion-item>
+      <ion-item >
+        <div >
+            <ion-label>{{ Gender }}+( 13.75 X{{ nweight }} )+( 5.003 X {{ nheight }} )-6.775X{{ nage }}</ion-label>    
+          </div>
+          </ion-item>
+          <ion-item >
+              <div >
+                  <ion-label><h1>Result</h1></ion-label>    
+                </div>
+                </ion-item >
+                  <div style="text-align:center">
+                     <ion-label>{{ bee }}</ion-label>
+               </div>
+  
+                     <ion-item >
+                        <div style="padding-left: 20px" >
+                            <div style="margin-top: 40px">
+                          <ion-label ><h1> TEE</h1></ion-label>
+                          </div>
+                          </div>
+                    </ion-item>
+                    <ion-item >
+                      <div >
+                          <ion-label>{{ bee }} x {{ Activity }} x {{Stress}}</ion-label>    
+                        </div>
+                        </ion-item>
+                        <ion-item >
+                            <div >
+                                <ion-label><h1>ผลลัพธ์</h1></ion-label>    
+                              </div>
+                              </ion-item >
+                                <div style="text-align:center">
+                                   <ion-label expand="block" >{{ bee * Activity * Stress }}</ion-label>
+                                  </div>
+    </ion-list>
+   
+  </ion-content>
+  

@@ -1,0 +1,44 @@
+<ion-header>
+    <ion-toolbar color="warning">
+        <ion-title>Addperson</ion-title>
+        <ion-button   href="./storage-person/:user" color="warning">
+          <ion-icon  name="arrow-back"></ion-icon>
+            </ion-button>
+      </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-label>Name</ion-label>
+        <ion-input  text-right type="text" [(ngModel)]="dataPerson.Name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Lastname</ion-label>
+        <ion-input  text-right type="text" [(ngModel)]="dataPerson.Lastname"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>No</ion-label>
+        <ion-input text-right type="text" [(ngModel)]="dataPerson.No"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Age</ion-label>
+        <ion-input text-right type="number" [(ngModel)]="dataPerson.Age"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label>Gender</ion-label>
+        <ion-select placeholder="Select One" [ngModel]="dataPerson.Gender" (ionChange)="selectGender($event)">
+            <ion-select-option value="F">Female</ion-select-option>
+            <ion-select-option value="M">Male</ion-select-option>
+          <!-- <ion-select-option value="66.47">Female</ion-select-option>
+          <ion-select-option value="65.09">Male</ion-select-option> -->
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+  <ion-footer>
+      <ion-button expand="block" (click)="ok()" >OK</ion-button>
+      <!-- <ion-button href="./menu/:user" expand="block" >BACK</ion-button> -->
+    </ion-footer>

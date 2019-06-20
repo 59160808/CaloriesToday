@@ -1,0 +1,40 @@
+<ion-header text-center >
+  <ion-toolbar color="warning" >
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="home" color="warning">
+  <ion-list>
+  
+    <!-- username -->
+    <ion-item >
+     
+      <ion-label >Username</ion-label> 
+    
+      <ion-input #usernameinput type="text" [(ngModel)]="nusername"></ion-input>
+   
+    </ion-item>
+    <!-- password -->
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input #passwordinput type="password" [(ngModel)]="npassword"></ion-input>
+    </ion-item>
+    <!-- Register -->
+    <ion-item >
+        <ion-button href="./register" expand="block" fill="outline">Register</ion-button>
+    </ion-item>
+
+    <ion-item >
+        <div>
+          <img height="50px" width="50px" src="/assets/picture/person2.png">
+        </div>
+        <ion-button href="./me-nupublic" color ="success" expand="block" fill="outline">เข้าใช้งานโดยไม่ Login </ion-button>
+      </ion-item>
+      <div>
+        <ion-button color="success" expand="block" (click)= "onClickLoginBtn()">Login</ion-button>
+    </div>
+  </ion-list>
+</ion-content>

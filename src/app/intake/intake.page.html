@@ -1,0 +1,329 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>Calories intake</ion-title>
+    <ion-button   href="./storage-person/:user" color="warning">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+
+<!-- Protein -->
+
+<ion-content>
+  
+  <ion-list>
+    <ion-item  >
+      <div style=" margin-top: 10px">
+        <img height="50px" width="50px" src="/assets/picture/beef.png">
+      </div>
+      <ion-label>Protein</ion-label>
+      <ion-select placeholder="ชนิด" (ionChange)="selectproteinValue($event)" >
+        <ion-select-option value="24.750">เนื้อไก่</ion-select-option>
+        <ion-select-option value="17.850">ไก่ดำส่วนน่อง</ion-select-option>
+        <ion-select-option value="20.550">ไก่ดำส่วนปีก</ion-select-option>
+        <ion-select-option value="23.100">ไก่ดำส่วนสะโพก</ion-select-option>
+        <ion-select-option value="19.050">ไก่ดำส่วนหน้าอก</ion-select-option>
+        <ion-select-option value="16.200">เนื้อหมู (ไม่ติดมัน)</ion-select-option>
+        <ion-select-option value="107.10">เนื้อหมู (ติดมัน)</ion-select-option>
+        <ion-select-option value="17.550">ตับหมู</ion-select-option>
+        <ion-select-option value="5.400">เลือดหมู</ion-select-option>
+        <ion-select-option value="93.900">แคปหมู (มีมัน)</ion-select-option>
+        <ion-select-option value="77.250">แคปหมู (ไม่มีมัน)</ion-select-option>
+        <ion-select-option value="27.750">แหนม</ion-select-option>
+        <ion-select-option value="53.550">หม฿หยอง</ion-select-option>
+        <ion-select-option value="29.850">เนื้อเป็ด</ion-select-option>
+        <ion-select-option value="20.100">เนื้อวัว (ไม่ติดมัน)</ion-select-option>
+        <ion-select-option value="20.850">เนื้อวัว (เนื้อเค็ม)</ion-select-option>
+        <ion-select-option value="61.800">เนื้อวัวทอด (ติดมัน)</ion-select-option>
+        <ion-select-option value="33.75">ลูกชิ้นเนื้อ</ion-select-option>
+        <ion-select-option value="50.25">ไส้กรอกไก่</ion-select-option>
+        <ion-select-option value="39.450">ไส้กรอกหมู</ion-select-option>
+        <ion-select-option value="19.95">ไข่ไก่ดิบ</ion-select-option>
+        <ion-select-option value="19.950">ไข่ไก่ต้ม</ion-select-option>
+        <ion-select-option value="52.20">ไข่ไก่เจียว</ion-select-option>
+        <ion-select-option value="79.50">ไข่ไก่ตุ๋น</ion-select-option>
+        <ion-select-option value="33.45">ไข่เป็ดดิบ</ion-select-option>
+        <ion-select-option value="24.30">ไข่เป็ดต้ม</ion-select-option>
+        <ion-select-option value="52.05">ไข่เป็ดเจียว</ion-select-option>
+        <ion-select-option value="25.65">ไข่นกกะทา</ion-select-option>
+        <ion-select-option value="13.80">กุ้ง</ion-select-option>
+        <ion-select-option value="12.60">ปลากราย</ion-select-option>
+        <ion-select-option value="18.30">ปลาช่อน</ion-select-option>
+        <ion-select-option value="17.10">ปลาดุก</ion-select-option>
+        <ion-select-option value="20.40">ปลาทูนึ่ง</ion-select-option>
+        <ion-select-option value="21.00">ปลาทูสด</ion-select-option>
+        <ion-select-option value="16.50">ปลาทูน่าสด</ion-select-option>
+        <ion-select-option value="32.70">ปลาทูน่าในน้ำมัน</ion-select-option>
+        <ion-select-option value="12.90">ปลาทูน่าในน้ำสลัด</ion-select-option>
+        <ion-select-option value="10.20">ปลาหมึกกล้วย</ion-select-option>
+        <ion-select-option value="11.10">หอยขม</ion-select-option>
+        <ion-select-option value="12.15">หอยแครง</ion-select-option>
+        <ion-select-option value="7.95">หอยแมลงภู่</ion-select-option>
+        <ion-select-option value="5.700">ลูกชิ้นปลา</ion-select-option>
+        <ion-select-option value="41.55">ลูกชิ้นปลาทอด</ion-select-option>
+        <ion-select-option value="51.15">หมูยอ</ion-select-option>
+        <ion-select-option value="63.000">ไส้อั่ว</ion-select-option>
+        <ion-select-option value="39.45">กุ้งแห้งตัวเล็ก</ion-select-option>
+        <ion-select-option value="11.40">ปลาสลิด</ion-select-option>
+        <ion-select-option value="17.55">ปูทะเล</ion-select-option>
+        <ion-select-option value="11.85">ปูม้า</ion-select-option>
+        <ion-select-option value="362.70">อัลมอน</ion-select-option>
+        <ion-select-option value="394.35">เฮเซลนัท</ion-select-option>
+        <ion-select-option value="450.60">แมคคาเดเมีย</ion-select-option>
+        <ion-select-option value="333.00">พีนัท</ion-select-option>
+        <ion-select-option value="410.70">วอลนัท </ion-select-option>
+        <ion-select-option value="66.90">ถั่วเหลือง</ion-select-option>
+        <ion-select-option value="52.80">ถั่วเขียว</ion-select-option>
+        <ion-select-option value="49.95">ถั่วแดง</ion-select-option>
+        <ion-select-option value="5.70">งาขาวคั่ว</ion-select-option>
+        <ion-select-option value="98.70">งาขาวดิบ</ion-select-option>
+        <ion-select-option value="90.45">งาดำดิบ</ion-select-option>
+        <ion-select-option value="93.75">งาดำอบ</ion-select-option>
+        <ion-select-option value="6.90">เต้าหู้ขาวอ่อน</ion-select-option>
+        <ion-select-option value="22.50">เต้าหู้เหลือง</ion-select-option>
+        <ion-select-option value="37.5">เต้าหู้ไข่ </ion-select-option>
+        <ion-select-option value="53.10">เต้าหู้ทอด </ion-select-option>
+        <ion-select-option value="27.60">ถั่วแระต้ม</ion-select-option>
+        <ion-select-option value="10.80">นมถั่วเหลืองUHT</ion-select-option>
+
+      </ion-select>
+      <ion-input type="number"  text-center placeholder="จำนวน"  [(ngModel)]="nprotein" ></ion-input>     
+      <ion-label >ช้อนโต๊ะ</ion-label>                                              
+    </ion-item>
+    <!-- Carbohydrate -->
+    <ion-item >
+      <div>
+        <img height="50px" width="50px" src="/assets/picture/rice.png">
+      </div>
+      <ion-label>Carbohydrate</ion-label>
+      <ion-select placeholder="ชนิด"  (ionChange)="selectcarbohydrateValue($event)" >
+        <ion-select-option value="211.80">ข้าวเจ้า100%</ion-select-option>
+        <ion-select-option value="213.60">ข้าวหอมมะลิ</ion-select-option>
+        <ion-select-option value="213.00">ข้าวเหนียว</ion-select-option>
+        <ion-select-option value="214.80">ข้าวซ้อมมือ</ion-select-option>
+        <ion-select-option value="219.000">ข้าวกล้อง</ion-select-option>
+        <ion-select-option value="219.00">ข้าวสาลี</ion-select-option>
+        <ion-select-option value="228.60">ข้าวโอ๊ต</ion-select-option>
+        <ion-select-option value="209.40">เส้นหมี่</ion-select-option>
+        <ion-select-option value="46.20">ขนมจีน</ion-select-option>
+        <ion-select-option value="81.00">เส้นใหญ่</ion-select-option>
+        <ion-select-option value="132.00">เส้นเล็ก</ion-select-option>
+        <ion-select-option value="202.20">วุ้นเส้น</ion-select-option>
+        <ion-select-option value="186.00">บะหมี่</ion-select-option>
+        <ion-select-option value="197.40">ขนมปังปอนด์</ion-select-option>
+        <ion-select-option value="218.40">ข้าวเหนียวดำ</ion-select-option>
+        <ion-select-option value="208.80">สาคูเม็ดเล็ก</ion-select-option>
+        <ion-select-option value="70.20">ข้าวโพดต้ม</ion-select-option>
+        <ion-select-option value="272.40">บะหมี่กึ่งสำเร็จรูป</ion-select-option>
+        <ion-select-option value="70.200">เผือก</ion-select-option>
+        <ion-select-option value="22.20">มันแกว</ion-select-option>
+        <ion-select-option value="58.20">มันเทศ</ion-select-option>
+        <ion-select-option value="73.800">มันฝรั่ง</ion-select-option>
+        <ion-select-option value="73.80">มันสำปะหลัง</ion-select-option>
+        <ion-select-option value="210.60">แป้งมันสำปะหลัง</ion-select-option>
+       
+      </ion-select>
+      <ion-input type="number" text-center placeholder="จำนวน" [(ngModel)]="ncarbohydrate" ></ion-input>     
+      <ion-label >ทัพพี</ion-label> 
+    </ion-item >
+    
+    <!-- Fuite -->
+    <ion-item >
+      <div>
+        <img height="50px" width="50px" src="/assets/picture/Newfruit.png">
+      </div>
+      <ion-label>Fuite</ion-label>
+      <ion-select placeholder="ชนิด"  (ionChange)="selectfuiteValue($event)" >
+        <ion-select-option value="56.0">กล้วยไข่</ion-select-option>
+        <ion-select-option value="59.00">กล้วยน้ำว้า</ion-select-option>
+        <ion-select-option value="60.000">กล้วยหอม</ion-select-option>
+        <ion-select-option value="53.0000">แก้วมังกรเนื้อสีชมพู</ion-select-option>
+        <ion-select-option value="59.00000">แก้วมังกรเนื้อสีขาว</ion-select-option>
+        <ion-select-option value="49.000000">ขนุน</ion-select-option>
+        <ion-select-option value="63.0000000">แคนตาลูปเนื้อสีเขียว</ion-select-option>
+        <ion-select-option value="54.00000000">แคนตาลูปเนื้อสีเขียว</ion-select-option>
+        <ion-select-option value="76.000000000">เงาะโรงเรียน</ion-select-option>
+        <ion-select-option value="53.0000000000">ชมพู่</ion-select-option>
+        <ion-select-option value="58.00000000000">แตงโมเนื้อแดง(กินรี)</ion-select-option>
+        <ion-select-option value="59.000000000000">แตงโมเนื้อเหลือง</ion-select-option>
+        <ion-select-option value="65.0000000000000">ทุเรียนหมอนทอง</ion-select-option>
+        <ion-select-option value="54.00000000000000">ฝรั่งกลมสาลี</ion-select-option>
+        <ion-select-option value="50.000000000000000">ฝรั่งกิมจู</ion-select-option>
+        <ion-select-option value="52.0000000000000000">มังคุด</ion-select-option>
+        <ion-select-option value="63.00000000000000000">เนื้อมะพร้าวอ่อน</ion-select-option>
+        <ion-select-option value="60.000000000000000000">น้ำมะพร้าวอ่อน</ion-select-option>
+        <ion-select-option value="62.0000000000000000000">มะเฟือง</ion-select-option>
+        <ion-select-option value="61.00000000000000000000">มะม่วงเขียวเสวย,ดิบ</ion-select-option>
+        <ion-select-option value="41.000000000000000000000">มะม่วงแรด,ดิบ</ion-select-option>
+        <ion-select-option value="51.0000000000000000000000">มะม่วงน้ำดอกไม้</ion-select-option>
+        <ion-select-option value="69.00000000000000000000000">มะม่วงอกร่อง</ion-select-option>
+        <ion-select-option value="56.000000000000000000000000">มะยงชิด</ion-select-option>
+        <ion-select-option value="60.0000000000000000000000000">มะละกอ</ion-select-option>
+        <ion-select-option value="59.00000000000000000000000000">ลำไย</ion-select-option>
+        <ion-select-option value="57.000000000000000000000000000">ลิ้นจี่จักรพรรดิ</ion-select-option>
+        <ion-select-option value="55.0000000000000000000000000000">ลิ้นจี่ค่อม</ion-select-option>
+        <ion-select-option value="56.00000000000000000000000000000">ลูกตาล</ion-select-option>
+        <ion-select-option value="58.000000000000000000000000000000">ลูกไหน</ion-select-option>
+        <ion-select-option value="58.0000000000000000000000000000000">สตรอว์เบอร์รี</ion-select-option>
+        <ion-select-option value="59.00000000000000000000000000000000">ส้มบางมด</ion-select-option>
+        <ion-select-option value="62.000000000000000000000000000000000">ส้มสายน้ำผึ้ง</ion-select-option>
+        <ion-select-option value="41.0000000000000000000000000000000000">ส้มโอ</ion-select-option>
+        <ion-select-option value="69.00000000000000000000000000000000000">สับปะรดภูเก็ต</ion-select-option>
+        <ion-select-option value="52.000000000000000000000000000000000000">สับปะรดศรีราชา</ion-select-option>
+        <ion-select-option value="64.0000000000000000000000000000000000000">สาลี่ก้านยาว</ion-select-option>
+        <ion-select-option value="57.00000000000000000000000000000000000000">สาลี่หอม</ion-select-option>
+        <ion-select-option value="53.000000000000000000000000000000000000000">สาลี่น้ำผึ่ง</ion-select-option>
+        <ion-select-option value="53.0000000000000000000000000000000000000000">องุ่นเขียว</ion-select-option>
+        <ion-select-option value="57.00000000000000000000000000000000000000000">องุ่นแดงผลใหญ่</ion-select-option>
+        <ion-select-option value="58.000000000000000000000000000000000000000000">องุ่นดำไร้เมล็ด</ion-select-option>
+        <ion-select-option value="52.0000000000000000000000000000000000000000000">แอบเปิ้ลดเขียว</ion-select-option>
+        <ion-select-option value="60.00000000000000000000000000000000000000000000">แอบเปิ้ลเเดงวอชิงตัน</ion-select-option>
+        <ion-select-option value="60.000000000000000000000000000000000000000000000">แอบเปิ้ลลายฟูจิ</ion-select-option>
+       
+      </ion-select>
+      <ion-input type="number"  text-center placeholder="จำนวน" [(ngModel)]="nfuite"></ion-input>     
+      <ion-label >ส่วน</ion-label>   
+    </ion-item >
+
+    <!-- veges -->
+
+    <ion-item >
+      <div>
+        <img height="50px" width="50px" src="/assets/picture/veg.png">
+      </div>
+      <ion-label>veges</ion-label>
+      <ion-select placeholder="ชนิด" (ionChange)="selectvegesValue($event)">
+        <ion-select-option value=18.40>กะเพราแดง, ใบ</ion-select-option>
+        <ion-select-option value="5.2">กะหล่ำดอก</ion-select-option>
+        <ion-select-option value="6.4">กะหล่ำปลี</ion-select-option>
+        <ion-select-option value="31.2">ขจร, ดอก</ion-select-option>
+        <ion-select-option value="19.6">ขนุน, อ่อน</ion-select-option>
+        <ion-select-option value="13.2">ข้าวโพด, อ่อน</ion-select-option>
+        <ion-select-option value="11.2">ขิง, แก่</ion-select-option>
+        <ion-select-option value="5.2">ขิง, อ่อน</ion-select-option>
+        <ion-select-option value="34.5">ขี้เหล็ก, ยอดและใบอ่อน</ion-select-option>
+        <ion-select-option value="9.2">คื่นช่าย</ion-select-option>
+        <ion-select-option value="15.2">ดอกแค</ion-select-option>
+        <ion-select-option value="16.8.2">แครอท</ion-select-option>
+        <ion-select-option value="47.6">ชะพลู, ใบ</ion-select-option>
+        <ion-select-option value="32">ชะอม, ยอด</ion-select-option>
+        <ion-select-option value="13.6">ดอกผักกวางตุ้ง</ion-select-option>
+        <ion-select-option value="13.6">ต้นหอม</ion-select-option> 
+        <ion-select-option value="4.4">ตะลิงปิง, ผล</ion-select-option>
+        <ion-select-option value="8">ตั้งโอ๋</ion-select-option>
+        <ion-select-option value="15.6">ตำลึง</ion-select-option>
+        <ion-select-option value="6">แตงกวา</ion-select-option>
+        <ion-select-option value="5.2">แตงไทยอ่อน</ion-select-option>
+        <ion-select-option value="3.3">แตงร้าน</ion-select-option>
+        <ion-select-option value="12.4">ถั่วแขก</ion-select-option>
+        <ion-select-option value="15.6">ถั่วงอก</ion-select-option>
+        <ion-select-option value="15.6">ถั่วฝักยาว</ion-select-option>
+        <ion-select-option value="9.2">ถั่วพู</ion-select-option>
+        <ion-select-option value="23.2">ถั่วลันเตา</ion-select-option>
+        <ion-select-option value="13.2">บร๊อคโครี่</ion-select-option>
+        <ion-select-option value="6.4">บวบ</ion-select-option>
+        <ion-select-option value="7.2">บวบเหลี่ยม</ion-select-option>
+        <ion-select-option value="21.6">บัวบก</ion-select-option>
+        <ion-select-option value="22">ใบเตย</ion-select-option>
+        <ion-select-option value="22.4">ใบยี่หร่า</ion-select-option>
+        <ion-select-option value="5.6">ผักกวางตุ้ง</ion-select-option>
+        <ion-select-option value="16">ผักกะเฉด</ion-select-option>
+        <ion-select-option value="4.4">ผักกาดขาว</ion-select-option>
+        <ion-select-option value="6.8">ผักกาดเขียว</ion-select-option>
+        <ion-select-option value="10.8">ผักกาดหอม</ion-select-option>
+        <ion-select-option value="10">ผักกูด</ion-select-option>
+        <ion-select-option value="12.4">ผักคะน้า</ion-select-option>
+        <ion-select-option value="65.4">ผักจวง</ion-select-option>
+        <ion-select-option value="15.2">ผักชีฝรั่ง</ion-select-option>
+        <ion-select-option value="15.6">ผักชีลาว</ion-select-option>
+        <ion-select-option value="10.8">ผักบุ้ง</ion-select-option>
+        <ion-select-option value="18.8">ผักหวาน</ion-select-option>
+        <ion-select-option value="30.4">พริกขี้หนู</ion-select-option>
+        <ion-select-option value="28.8">พริกชี้ฟ้า</ion-select-option>
+        <ion-select-option value="47.2">พริกไทย</ion-select-option>
+        <ion-select-option value="6.4">พริกหนุ่ม</ion-select-option>
+        <ion-select-option value="12.8">พริกหยวก</ion-select-option>
+        <ion-select-option value="32.8">พริกหวาน</ion-select-option>
+        <ion-select-option value="5.2">ฟักเขียว</ion-select-option>
+        <ion-select-option value="51.2">ฟักทอง</ion-select-option>
+        <ion-select-option value="35.2">มะกอกไทย</ion-select-option>
+        <ion-select-option value="38">มะขาม</ion-select-option>
+        <ion-select-option value="127.2">มะขามเปียก</ion-select-option>
+        <ion-select-option value="12.4">หอมหัวใหญ่</ion-select-option>
+        <ion-select-option value="11.2">หัวปลี</ion-select-option>
+        <ion-select-option value="12">เห็ดนางรม</ion-select-option>
+        <ion-select-option value="14">เห็ดนางฟ้า</ion-select-option>
+        <ion-select-option value="14">เห็ดฟาง</ion-select-option>
+        <ion-select-option value="13.6">เห็ดเป๋าฮื้อ</ion-select-option>
+        <ion-select-option value="20">เห็ดหูหนู</ion-select-option>
+        <ion-select-option value="52.8">สะตอ</ion-select-option>
+        <ion-select-option value="3.2">สายบัว</ion-select-option>
+        <ion-select-option value="18.8">หน่อไม้ปิ๊บ</ion-select-option>
+        <ion-select-option value="6">หยวกกล้วย</ion-select-option>
+        <ion-select-option value="14.8">มะละกอดิบ</ion-select-option>
+        <ion-select-option value="18">ยอดมะพร้าวอ่อน</ion-select-option>
+        <ion-select-option value="10.4">มะเขือเทศลูกเล็ก</ion-select-option>
+        <ion-select-option value="26">มะเขือพวง</ion-select-option>
+        <ion-select-option value="13.2">มะเขือม่วง</ion-select-option>
+        <ion-select-option value="15.6">มะเขือเสวย</ion-select-option>
+        <ion-select-option value="13.6">มะดัน</ion-select-option>
+        <ion-select-option value="40.4">มะตูม</ion-select-option>
+        <ion-select-option value="40">มะยม</ion-select-option>
+        <ion-select-option value="34.8">มะระ</ion-select-option>
+
+        
+      </ion-select>
+      <ion-input type="number"  text-center placeholder="จำนวน" [(ngModel)]="nveges"></ion-input>     
+      <ion-label >ทัพพี</ion-label> 
+    </ion-item >
+    <!-- Fat -->
+
+    <ion-item >
+      <div>
+        <img height="50px" width="50px" src="/assets/picture/Fat.png">
+      </div> 
+      <ion-label>Fat</ion-label>
+      <ion-select placeholder="ชนิด"  (ionChange)="selectfatValue($event)" >
+        <ion-select-option value="36.00">เนย</ion-select-option>
+        <ion-select-option value="40.00">น้ำมันมะพร้าว</ion-select-option>
+        <ion-select-option value="46.67 ">น้ำมันตับปลา</ion-select-option>
+        <ion-select-option value="40.0">น้ำมันข้าวโพด</ion-select-option>
+        <ion-select-option value="39">ไขมันหมู</ion-select-option>
+        <ion-select-option value="33.33">เนยเทียม</ion-select-option>
+        <ion-select-option value="44.33">น้ำมันมะกอก</ion-select-option>
+        <ion-select-option value="41.0">น้ำมันปาล์ม</ion-select-option>
+        <ion-select-option value="40.0000">น้ำมันถั่วลิสง</ion-select-option>
+        <ion-select-option value="41.3300">น้ำมันรำข้าว</ion-select-option>
+        <ion-select-option value="41.33000">น้ำมันงา</ion-select-option>
+        <ion-select-option value="41.330">น้ำมันถั่วเหลือง</ion-select-option>
+        <ion-select-option value="41.330000">น้ำมันดอกทานตะวัน</ion-select-option>
+      </ion-select>
+      <ion-input type="number" #inputfat text-center placeholder="จำนวน" [(ngModel)]="nfat"></ion-input>     
+      <ion-label >ช้อน</ion-label>    
+    </ion-item >
+    <!-- Other(Fill by youself) -->
+    <ion-item >
+      <div>
+        <img height="50px" width="50px" src="/assets/picture/Fill.png">
+      </div>
+      <ion-label>Other(Fill by youself)</ion-label>
+    </ion-item >
+    <ion-item >
+      <ion-label>อาหาร</ion-label>
+
+      <ion-input  text-center placeholder="ชนิด" type="text" value></ion-input>
+    </ion-item >
+    <ion-item >
+      <ion-label>ปริมาณ</ion-label>
+      <ion-input type="number"  text-center placeholder="calories"  type="text" value [(ngModel)]="otherValue"></ion-input>
+    </ion-item >
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-button  expand="block" (click)="ok()">OK</ion-button>
+ 
+</ion-footer>
+
+
